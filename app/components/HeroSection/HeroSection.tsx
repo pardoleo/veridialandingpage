@@ -18,26 +18,30 @@ const HeroSection = () => {
           {/* Titulo Desktop */}
           <Col lg={7} className="title">
             <div className="name-skills">
-              <h1 className="name">Davi Castanha</h1>
+              <h1 className="name">Leonardo Castanha</h1>
               {/* -----Animação----- */}
               <h2 className="skills">
                 <TypeAnimation
                   sequence={[
-                    "Web Development",
+                    "Game Designer",
+                    1000,
+                    "Unity Engine",
                     1000,
                     "User Interface",
                     1000,
+                    "C#",
+                    1000,
+                    "Unreal Engine",
+                    1000,
+                    "Game Development",
+                    1000,
                     "User Experience",
                     1000,
-                    "Programação Orientada ao Cliente",
+                    "ASP.NET Framework",
                     1000,
-                    "Next",
+                    "Full Stack",
                     1000,
-                    "React",
-                    1000,
-                    "Bootstrap",
-                    1000,
-                    "HTML e CSS",
+                    "Programação Orientada a Objetos",
                     1000,
                   ]}
                   wrapper="span"
@@ -46,8 +50,8 @@ const HeroSection = () => {
                 />
               </h2>
               <div className="desktop-description">
-                <h2>Sou um desenvolvedor Front-end apaixonado por aprender e transformar ideias em soluções. <br />
-                  Minhas principais habilidades incluem HTML5, CSS3, JavaScript, React.js e Next.js.  <br />
+                <h2>Sou um desenvolvedor Front-end apaixonado por aprender e transformar ideias em soluções. <br /><br />
+                  Minhas principais habilidades incluem HTML5, CSS3, JavaScript, React.js e Next.js.  <br /><br />
                   Tenho como objetivo entender as necessidades das pessoas para entregar resultados que superem expectativas, combinando criatividade e funcionalidade.</h2>
               </div>
             </div>
@@ -66,25 +70,29 @@ const HeroSection = () => {
           {/* Titulo mobile */}
           <Col xs={12} className="title">
             <div className="name-skills text-center">
-              <h1 className="name">Davi Castanha</h1>
+              <h1 className="name">Leonardo Castanha</h1>
               <h2 className="skills">
                 <TypeAnimation
                   sequence={[
-                    "Web Development",
+                    "Game Designer",
+                    1000,
+                    "Unity Engine",
                     1000,
                     "User Interface",
                     1000,
+                    "C#",
+                    1000,
+                    "Unreal Engine",
+                    1000,
+                    "Game Development",
+                    1000,
                     "User Experience",
                     1000,
-                    "Programação Orientada ao Cliente",
+                    "ASP.NET Framework",
                     1000,
-                    "Next",
+                    "Full Stack",
                     1000,
-                    "React",
-                    1000,
-                    "Bootstrap",
-                    1000,
-                    "HTML e CSS",
+                    "Programação Orientada a Objetos",
                     1000,
                   ]}
                   wrapper="span"

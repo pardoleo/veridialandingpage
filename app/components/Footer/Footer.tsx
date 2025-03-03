@@ -6,13 +6,13 @@ const Footer = () => {
   return (
     <div className='footercontainer' id='contato'>
       <div className="contact-icons">
-              <a href="https://www.linkedin.com/in/davicastanhaescribano/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/leonardo-castanha-escribano-640b8b17a/" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-linkedin-in fa-4x"></i>
               </a>
-              <a href="https://github.com/DaviCastanha" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/pardoleo" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-github fa-4x"></i>
               </a>
-              <a href="https://wa.me/5511985452742" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5511948866757" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-whatsapp fa-4x"></i>
               </a>
         </div>

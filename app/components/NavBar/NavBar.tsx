@@ -37,7 +37,7 @@ const NavBar = () => {
             <div className="navbar-img">
               <Image src="/devlogo.png" alt="logo" width={100} height={100} />
             </div>
-            <h1 className="navbar-name">Davi Castanha</h1>
+            <h1 className="navbar-name">Leonardo Castanha</h1>
             <Nav className="nav-anchors-desktop">
               <Nav.Link href="#home">Home</Nav.Link>
               <Nav.Link href="#sobre-mim">Sobre Mim</Nav.Link>
@@ -45,13 +45,13 @@ const NavBar = () => {
               <Nav.Link href="#contato">Contato</Nav.Link>
             </Nav>
             <div className="contact-icons">
-              <a href="https://www.linkedin.com/in/davicastanhaescribano/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/leonardo-castanha-escribano-640b8b17a/" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-linkedin-in fa-2x"></i>
               </a>
-              <a href="https://github.com/DaviCastanha" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/pardoleo" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-github fa-2x"></i>
               </a>
-              <a href="https://wa.me/5511985452742" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5511948866757" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-whatsapp fa-2x"></i>
               </a>
             </div>

@@ -36,11 +36,11 @@ function Projects() {
         <Col>
           <Tabs activeKey={activeKey} onSelect={(k) => setActiveKey(k ?? 'Todos')}>
             <Tab eventKey="Todos" title="Todos" />
-            <Tab eventKey="Web" title="Web" />
-            <Tab eventKey="Mobile" title="Mobile" />
-            <Tab eventKey="Apps" title="Apps" />
             <Tab eventKey="Games" title="Games" />
-            <Tab eventKey="Tools" title="Tools" />
+            <Tab eventKey="Apps" title="Apps" />
+            <Tab eventKey="2D Art" title="2D Art" />
+            <Tab eventKey="3D Art" title="3D Art" />
+            <Tab eventKey="Pixel Art" title="Pixel Art" />
           </Tabs>
         </Col>
       </Row>
