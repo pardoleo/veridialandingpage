@@ -1,0 +1,117 @@
+@import "../../colors.scss";
+
+.projectscontainer {
+    height: 100vh; // Mantém o viewport inteiro no mobile e desktop
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#projetos {
+    background-color: $secondary-color;
+    max-width: unset;
+
+    .nav-tabs {
+        @media (max-width: 992px) {
+            margin-top: 48px;
+        }
+    }
+
+    // Tabs
+    .nav-tabs .nav-link.active {
+        color: $neutral-color-1 !important;
+        background-color: $primary-color !important;
+        border-color: $primary-color !important;
+    }
+
+    .nav-tabs .nav-link {
+        color: $neutral-color-2 !important;
+        background-color: transparent !important;
+        border-color: transparent !important;
+    }
+
+    .nav-tabs .nav-link:hover {
+        color: $neutral-color-1 !important;
+    }
+
+    // Cards
+    .row {
+        padding: 24px 0;
+    }
+
+    .project-card {
+        --bs-border-radius: 24px !important;
+        box-shadow: -5px 5px 20px $neutral-color-2;
+        overflow: hidden; // Garante que nada vaze além das bordas arredondadas
+        border-radius: 24px;
+        transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: -5px 5px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 24px 24px 0 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .card-body {
+            background-color: #FAFAFA;
+            border-radius: 0 0 24px 24px;
+            padding: 20px;
+            text-align: center;
+
+            h3 {
+                font-size: 1.2rem;
+                color: $primary-color;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 1rem;
+                color: $neutral-color-2;
+            }
+
+            Button {
+                background-color: $primary-color;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+
+    .btn {
+        background-color: $primary-color !important;
+        border: none;
+        color: $secondary-color;
+    }
+
+    .btn:hover {
+        color: $neutral-color-1 !important;
+    }
+}
+
+.project-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+
+    .btn {
+        background-color: $primary-color;
+        color: $secondary-color;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s ease-in-out;
+
+        &:hover {
+            background-color: darken($primary-color, 10%);
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@import "../../colors.scss";
+
+.footercontainer{
+    height: 100vh; /*Pro Viewport do hero section ser a tela toda no cel e no desk*/
+    display: flex; /*Pra alinhar os itens no centro, senão cai debaixo da navbar no mobile e a foto sobe no desk*/
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: $primary-color;
+    .contact-icons{
+        a i{
+                color: $neutral-color-1 !important;
+                margin: 0 15px;
+        }
+    }
+}

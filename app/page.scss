@@ -1,0 +1,69 @@
+@import './colors.scss';
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0; /* Remove qualquer margem padrão */
+    padding: 0; /* Remove qualquer padding padrão */
+    width: 100%; /* Garante que o body ocupe 100% da largura */
+    overflow-x: hidden; /* Remove a rolagem horizontal */
+    box-sizing: border-box; /* Inclui padding e border na largura e altura */
+}
+// Formatação vertical para mobile
+.page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    // Margin-top padrão para telas pequenas
+    @media (max-width: 991.98px) { // Menor que lg (992px)
+        // margin-top: -32px;
+    }
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+// OffCanvas
+.sidebar {
+    width: 250px;
+    background-color: $primary-color;
+}
+// Conteúdo da página
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    width: 100%;
+    padding: 0;
+}
+
+@media (min-width: 992px) {
+    // Responsividade para LG
+    .page {
+        flex-direction: row;
+    }
+    // OffCanvas Fixo à esquerda
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        /* Use 100vh para que a altura do menu seja 100% da altura da viewport */
+        overflow-y: auto;
+        /* Permite rolagem no menu se necessário */
+        z-index: 1000;
+        /* Certifique-se de que o menu fique acima do conteúdo */
+    }
+    // Conteúdo da página à direita
+    .content {
+        margin-left: 250px;
+    }
+}
+
+.navbar {
+    justify-content: center;
+}

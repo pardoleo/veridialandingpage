@@ -1,0 +1,99 @@
+[
+    {
+        "id": 1,
+        "title": "Recriação de Landing Page",
+        "category": "Mobile",
+        "imgSrc": [
+            "/welcome/welcome0.png",
+            "/welcome/welcome1.png",
+            "/welcome/welcome2.png"
+        ],
+        "description": "Exercício web para mobile, usando HTML, CSS e JS",
+        "btn": [
+            {
+                "text": "Github",
+                "link": "https://github.com/DaviCastanha/welcome"
+            }
+            
+        ]
+    },
+    {
+        "id": 2,
+        "title": "React To-Do",
+        "category": "Tools",
+        "imgSrc": [
+            "/todo/todo0.png",
+            "/todo/todo1.png",
+            "/todo/todo2.png"
+        ],
+        "description": "Exercício para desenvolvimento de React e json",
+        "btn": [
+            {
+                "text": "Github",
+                "link": "https://github.com/DaviCastanha/todo"
+            }
+            
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Quem é esse Pokémon?",
+        "category": "Games",
+        "imgSrc": [
+            "/poke/poke0.png",
+            "/poke/poke1.png",
+            "/poke/poke2.png"
+        ],
+        "description": "Inspiração no game da Nintendo em HTML",
+        "btn": [
+            {
+                "text": "Github",
+                "link": "https://github.com/DaviCastanha/whosthatpokemon"
+            }
+            
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Portfólio Genérico",
+        "category": "Web",
+        "imgSrc": [
+            "/bstp/bstp0.png",
+            "/bstp/bstp1.png",
+            "/bstp/bstp2.png",
+            "/bstp/bstp3.png",
+            "/bstp/bstp4.png",
+            "/bstp/bstp5.png",
+            "/bstp/bstp6.png",
+            "/bstp/bstp7.png"
+        ],
+        "description": "Landing page com componentes estilizados Bootstrap",
+        "btn": [
+            {
+                "text": "Github",
+                "link": "https://github.com/DaviCastanha/portfolioesqueleto"
+            }
+            
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Mouse Automation",
+        "category": "Tools",
+        "imgSrc": [
+            "/clicker/clicker0.png",
+            "/clicker/clicker1.png",
+            "/clicker/clicker2.png",
+            "/clicker/clicker3.png",
+            "/clicker/clicker4.png"
+        ],
+        "description": "Clicker feito em Python para automatizar tarefas",
+        "btn": [
+            {
+                "text": "Github",
+                "link": "https://github.com/DaviCastanha/clicker"
+            }
+            
+        ]
+    }
+]

@@ -1,0 +1,98 @@
+@import "../../colors.scss";
+
+// Navbar mobile e popup dela
+.custom-navbar, .popup-navbar{
+    background-color: $primary-color !important;
+    color: $neutral-color-1 !important;
+    align-items: center;
+    text-align: center;
+    .offcanvas-body{
+        .nav-link{
+            margin-bottom: 6px;
+        }
+    }
+}
+// Botão de acesso ao menu na navegação mobile
+.menu-button{
+    background-color: $primary-color;
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    // Ícone de seta
+    i{
+        font-size: x-large;
+        color: $neutral-color-1;
+    }
+    &:hover{
+        background-color: $accent-color;
+    }
+}
+
+// Desk
+.nav-content-desktop{
+    text-align: center;
+    justify-items: center;
+    .navbar-img {
+        display: flex;
+        justify-content: center;   /* Centraliza horizontalmente */
+        align-items: center;       /* Centraliza verticalmente */
+        width: 150px;              /* Largura fixa para garantir o círculo */
+        height: 150px;             /* Altura fixa igual à largura */
+        background-color: $neutral-color-1;
+        border-radius: 50%;        /* Garante o círculo */
+        overflow: hidden;          /* Garante que qualquer conteúdo dentro seja cortado no formato do círculo */
+        margin: 50px 0 50px 0;
+    }
+    h1{
+        font-size: x-large;
+        font-weight: 300;
+        color: $neutral-color-1;
+
+    }
+    .nav-anchors-desktop {
+        font-size: large;
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0 50px 0;
+        
+        a {
+            color: $neutral-color-1 !important;
+            text-decoration: none;
+            position: relative; /* Necessário para o posicionamento do pseudo-elemento */
+    
+            /* Pseudo-elemento para criar a borda */
+            &::after {
+                content: ''; /* Não mexe no texto original */
+                position: absolute;
+                left: 50%; /* Centraliza horizontalmente */
+                bottom: -2px; /* Coloca a borda logo abaixo do texto */
+                transform: translateX(-50%);
+                width: calc(100% + 20px); /* A borda é maior que o texto */
+                height: 2px; /* Espessura da borda */
+                background: linear-gradient(
+                    to right,
+                    transparent,
+                    rgba($neutral-color-1, 0.278),
+                    transparent
+                );
+                opacity: 0; /* Esconde a borda por padrão */
+                transition: opacity 0.3s ease-in-out;
+            }
+    
+            /* Exibe a borda no hover */
+            &:hover::after {
+                opacity: 1;
+            }
+        }
+
+    }
+    .contact-icons{
+        a i{
+            color: $neutral-color-1 !important;
+            margin: 50px 10px;
+        }
+    }
+}
+
+

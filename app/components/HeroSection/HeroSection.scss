@@ -1,0 +1,91 @@
+@import "../../colors.scss";
+
+.hero-section-container{
+    height: 100vh; /*Pro Viewport do hero section ser a tela toda no cel e no desk*/
+    display: grid; 
+    place-items: center;
+
+    width: 100%;
+    background-color: $neutral-color-1;
+    .name-skills{
+        margin-left: 24px;
+        .name{
+            color:$neutral-color-2;
+            font-weight: 800;
+        }
+        .skills{
+            color: $accent-color;
+            font-weight: 600;
+            margin-bottom: 12px;
+            
+        }
+        .desktop-description{
+            text-align: justify;
+            h2{
+                color:$neutral-color-2;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+.mobileherosection{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    .title{
+        flex: 0 1 auto;
+        margin-top: 6rem;
+        
+        // Animação
+        .skills {
+            animation: typing 0s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+        
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: #007bff; }
+        }
+    }
+    .description{
+        flex: 0 1 auto;
+        // margin-top: 6rem;
+    }
+}
+.photo {
+    img {
+        border-radius: 50%;
+        width: 50%; /* Largura padrão para telas pequenas */
+        margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+        img {
+            width: 50%; /* Largura para telas pequenas */
+        }
+    }
+
+    @media (min-width: 769px) {
+        img {
+            width: 40%; /* Largura para telas médias */
+        }
+    }
+
+    @media (min-width: 992px) {
+        img {
+            width: 80%; /* Largura para telas grandes (desktop) */
+        }
+    }
+}
+.mobile-description {
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+

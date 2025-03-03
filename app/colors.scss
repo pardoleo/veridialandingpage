@@ -1,0 +1,34 @@
+@import "~/node_modules/bootstrap/scss/bootstrap.scss";
+
+
+$primary-color: #4c5c68; /*  */
+$secondary-color: #c5c3c6; /*  */
+$accent-color: #1985a1; /*  */
+$neutral-color-1: #dcdcdd; /*  */
+$neutral-color-2: #46494c; /*  */
+
+
+// Escolhendo a Cor Certa para Cada Elemento:
+
+// Fundo:
+
+// Primordial: dcdcdd (neutral-color-1): Crie um ambiente clean e profissional.
+// Alternativa: c5c3c6 (neutral-color-2): Proporcione um visual mais aconchegante e convidativo.
+
+// Textos:
+
+// Cor Principal: 46494c (neutral-color-3): Garanta ótima legibilidade em fundos claros.
+// Contraste: 1985a1 (accent-color): Utilize para destacar títulos, subtítulos e informações importantes.
+
+// Elementos:
+
+// Neutros: c5c3c6 (neutral-color-2) e 46494c (neutral-color-3): Bordas, separações, menus, botões secundários e outros elementos que precisam de discrição.
+// Destaque: 4c5c68 (accent-color): Botões primários, links importantes, chamadas para ação e elementos que precisam atrair atenção.
+// Vibração: 1985a1 (accent-color): Detalhes, ícones, elementos que precisem de um toque de energia e modernidade.
+
+// Considerações Adicionais:
+
+// Acessibilidade: Combine cores com alto contraste para garantir a leitura por pessoas com deficiência visual.
+// Harmonia: Utilize a regra 60-30-10 para combinar as cores: 60% cor principal, 30% cor secundária e 10% cor de destaque.
+// Emoções: As cores transmitem emoções. Escolha-as de acordo com a mensagem que você deseja passar (ex: azul para confiança, verde para tranquilidade, etc.).
+// Teste e Ajuste: Experimente diferentes combinações e peça feedback para garantir que o resultado esteja agradável e transmita a mensagem desejada.
