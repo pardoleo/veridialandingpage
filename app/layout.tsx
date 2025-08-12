@@ -8,10 +8,10 @@ const inter = Inter({ subsets: ["latin"] });
 // O conteúdo abaixo foi removido para não causar conflitos
 // na importação de metadatas.
 export const metadata: Metadata = {
-  title: "Davi Castanha Escribano",
-  description: "Desenvolvedor WEB",
-  authors:[{ name: "Davi Castanha Escribano", url: "https://www.linkedin.com/in/davicastanhaescribano/" }],
-  keywords:"HTML, CSS, JavaScript, React.JS, Bootstrap, Next.JS",
+  title: "Leonardo Castanha Escribano",
+  description: "Desenvolvedor de Jogos, Desenvolvedor C#",
+  authors:[{ name: "Leonardo Castanha Escribano", url: "https://www.linkedin.com/in/leonardo-castanha-escribano-640b8b17a/" }],
+  keywords:"C#, Unity, Unreal, POO, UI, UX, Engine, .NET, ASP.NET, C++",
 
 };
 

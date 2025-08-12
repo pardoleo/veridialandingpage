@@ -1,20 +1,54 @@
 [
-    {
-        "id": 1,
-        "title": "Recriação de Landing Page",
-        "category": "2D Art",
-        "imgSrc": [
-            "/welcome/welcome0.png",
-            "/welcome/welcome1.png",
-            "/welcome/welcome2.png"
-        ],
-        "description": "Exercício web para mobile, usando HTML, CSS e JS",
-        "btn": [
-            {
-                "text": "Baixar",
-                "link": "https://github.com/DaviCastanha/welcome"
-            }
-            
-        ]
-    }
+  {
+    "id": 1,
+    "title": {
+      "pt" : "Jogo Capinave",
+      "en" : "Capinave game"
+    },
+    "category": "Games",
+    "imgSrc": [
+      "/capinave/capi0.png",
+      "/capinave/capi1.png",
+      "/capinave/capi2.png",
+      "/capinave/capi3.png",
+      "/capinave/capi4.png",
+      "/capinave/capi5.png"
+    ],
+    "description": {
+      "pt": "Jogo de nave estilo shooter, pixel art, simples",
+      "en": "Simple space shooter pixel art game"
+    },
+    "btn": [
+      {
+        "text":{
+          "pt" : "Baixar",
+          "en" : "Download"
+        },
+        "link": "https://pardow.itch.io/capinave"
+      }
+    ]
+  },
+
+  {
+    "id": 2,
+    "title": {
+      "pt" : "Portfolio de artes",
+      "en" : "Art portfolio"
+    },
+    "category": "Artes",
+    "imgSrc": ["/portfolio arte/pixel0.png"], 
+    "description": {
+      "pt": "Se você tem interesse em meu portfolio de artes tanto pixel, 2d e 3d  pode encontra-lo aqui:",
+      "en": "If you have interest in my art portfolio here is the link:"
+    },
+    "btn": [
+      {
+        "text":{
+          "pt" : "Meu artstation",
+          "en" : "My artstation"
+        },
+        "link": "https://www.artstation.com/pardow"
+      }
+    ]
+  }
 ]

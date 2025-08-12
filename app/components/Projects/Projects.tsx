@@ -4,17 +4,27 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Tabs, Tab, Card, Button } from 'react-bootstrap';
 import projectsJson from './Projects.json'
 import Image from 'next/image'
+import { useLanguage } from '@/app/context/LanguageContext';
+
 
 interface IProjectBtn {
-  text: string;
+  text: IProjectTitle;
   link: string;
+}
+interface IProjectTitle{
+  pt: string;
+  en: string;
+}
+interface IProjectDescription{
+  pt: string;
+  en: string;
 }
 interface IProject {
   id: number;
-  title: string;
+  title: IProjectTitle;
   category: string;
   imgSrc: string[];
-  description: string;
+  description: IProjectDescription;
   btn?: IProjectBtn[];
 }
 
@@ -23,6 +33,7 @@ const projects: IProject[] = projectsJson;
 function Projects() {
   const [activeKey, setActiveKey] = useState<string>('Todos');
   const [showMore, setShowMore] = useState(false);
+  const { language, texts } = useLanguage();
 
   const filteredProjects = activeKey === 'Todos'
     ? projects
@@ -35,12 +46,11 @@ function Projects() {
       <Row>
         <Col>
           <Tabs activeKey={activeKey} onSelect={(k) => setActiveKey(k ?? 'Todos')}>
-            <Tab eventKey="Todos" title="Todos" />
-            <Tab eventKey="Games" title="Games" />
+            <Tab eventKey="Todos" title={texts[language]?.projectTab} />
+            <Tab eventKey="Web" title="Web" />
+            <Tab eventKey="Mobile" title="Mobile" />
             <Tab eventKey="Apps" title="Apps" />
-            <Tab eventKey="2D Art" title="2D Art" />
-            <Tab eventKey="3D Art" title="3D Art" />
-            <Tab eventKey="Pixel Art" title="Pixel Art" />
+            <Tab eventKey="Games" title="Games" />
           </Tabs>
         </Col>
       </Row>
@@ -63,9 +73,13 @@ function Projects() {
     </Container>
   );
 }
+interface IProjectCardParams{
+  project: IProject;
 
+}
 // **Componente do Card**
-const ProjectCard = ({ project }: { project: IProject }) => {
+const ProjectCard = ({ project}: IProjectCardParams) => {
+  const { language, texts } = useLanguage();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isActive, setIsActive] = useState(false);
   const cardRef = React.useRef<HTMLDivElement>(null);
@@ -112,14 +126,14 @@ const ProjectCard = ({ project }: { project: IProject }) => {
       onMouseLeave={() => !isMobile && setIsActive(false)}
       onTouchStart={() => isMobile && setIsActive(true)}
     >
-      <Image src={project.imgSrc[currentImageIndex]} alt={project.title} width={500} height={300} />
+      <Image src={project.imgSrc[currentImageIndex]} alt={project.title[language as keyof IProjectTitle]} width={500} height={300} />
       <div className="card-body">
-        <h3>{project.title}</h3>
-        <p>{project.description}</p>
+        <h3>{project.title[language as keyof IProjectTitle]}</h3>
+        <p>{project.description[language as keyof IProjectTitle]}</p>
         <div className="project-buttons">
           {project.btn?.map((button, index) => (
             <a key={index} href={button.link} target="_blank" rel="noopener noreferrer">
-              <button className="btn">{button.text}</button>
+              <button className="btn">{button.text[language as keyof IProjectTitle]}</button>
             </a>
           ))}
         </div>

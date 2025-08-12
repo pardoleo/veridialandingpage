@@ -3,6 +3,7 @@
     "",
     "\\app",
     "\\app\\components",
+    "\\app\\components\\AboutMe",
     "\\public"
   ],
   "PreviewInSolutionExplorer": false

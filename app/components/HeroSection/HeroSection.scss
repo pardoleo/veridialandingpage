@@ -5,6 +5,17 @@
     display: grid; 
     place-items: center;
 
+
+    position: relative; // Pra permitir posicionamento absoluto interno
+    
+    .language-switcher-wrapper {
+        position: absolute;
+        top: 20px; // Ajusta conforme teu gosto
+        right: 20px; // Ajusta conforme teu gosto
+        z-index: 10; // Fica na frente de outros elementos se precisar
+    }
+
+
     width: 100%;
     background-color: $neutral-color-1;
     .name-skills{
@@ -66,13 +77,13 @@
 
     @media (max-width: 768px) {
         img {
-            width: 50%; /* Largura para telas pequenas */
+            width: 40%; /* Largura para telas pequenas */
         }
     }
 
     @media (min-width: 769px) {
         img {
-            width: 40%; /* Largura para telas médias */
+            width: 35%; /* Largura para telas médias */
         }
     }
 

@@ -1,0 +1,53 @@
+{
+  "pt": {
+    "navbar": {
+      "home": "Início",
+      "about": "Sobre Mim",
+      "projects": "Projetos",
+      "contact": "Contato"
+    },
+    "hero": {
+      "intro1": "Um desenvolvedor de jogos e aplicativos com alto empenho em aprender mais ",
+      "intro2": "Minhas principais habilidades incluem Unity, C#, Game Dev, ASP.NET, UI e Game Design.",
+      "intro3": "Tenho como objetivo crescer profissionalmente e atender novos desafios sempre me atentando a melhores resultados de forma criativa."
+    },
+    "about": {
+          "title": "Sobre Mim",
+          "titleTagProf": "Profissional",
+          "titleTagPers": "Pessoal",
+          "personal1":  "Sou um desenvolvedor full stack apaixonado por criação de jogos em sua essência, através de minha faculdade de jogos digitais eu conheci a programação e hoje consigo programar as mais diversas coisas utilizando essas habilidades que adquiri no caminho. ",
+          "personal2": "Desde trabalhar em jogos simples como o capinave, como jogos como o Special zoo sempre me dediquei em aprender novas coisas e novas ferramentas para alcançar coisas ainda maiores hoje meu objetivo é ingressar na produção de programas utilizando .NET e aumentar ainda mais meu leque.",
+          "professional1": "Desde criança gosto de aprender e explorar coisas novas, desde o RPG Maker,",
+          "professional2": "Sempre inovando para construir mais e diferenciar os produtos dos que ja existem",
+          "professional3": "No tempo livre gosto de jogar, ler, socializar, ouvir música e estudar."
+      }, 
+    "projectTab" : "Todos"
+  },
+
+  "en": {
+    "navbar": {
+      "home": "Home",
+      "about": "About Me",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "hero": {
+      "intro1": "A game and app developer with a strong commitment to learning more.",
+      "intro2": "My main skills include Unity, C#, Game Dev, ASP.NET, UI, and Game Design.",
+      "intro3": "My goal is to grow professionally and take on new challenges while always striving for better results in a creative way."
+    },
+
+   "about": {
+    "title": "About Me",
+    "titleTagProf": "Professional",
+    "titleTagPers": "Personal",
+    "personal1": "I am a full-stack developer passionate about game creation at its core. Through my digital games degree, I discovered programming, and today I can develop a wide variety of things using the skills I have acquired along the way. ",
+    "personal2": "From working on simple games like Capinave to more complex projects like Special Zoo, I have always been dedicated to learning new things and mastering new tools to achieve even greater goals. Today, my objective is to enter the world of software development using .NET and further expand my skill set. ",
+    "professional1": "Since childhood, I have enjoyed learning and exploring new things, from RPG Maker onwards. ",
+    "professional2": "Always innovating to build more and differentiate products from those that already exist. ",
+    "professional3": "In my free time, I enjoy playing games, reading, socializing, listening to music, and studying. "
+    },
+
+    "projectTab" : "All"
+  }
+}

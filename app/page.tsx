@@ -3,22 +3,21 @@ import Footer from "./components/Footer/Footer";
 import HeroSection from "./components/HeroSection/HeroSection";
 import NavBar from "./components/NavBar/NavBar";
 import Projects from "./components/Projects/Projects";
-import './page.scss'
-
-
+import { LanguageProvider } from "./context/LanguageContext";  // Importa o contexto
+import "./page.scss";
 
 export default function Home() {
   return (
-    <>
+    <LanguageProvider>
       <div className="page">
-        <NavBar/>
+        <NavBar />
         <div className="content">
-          <HeroSection/>
-          <AboutMe/>
-          <Projects/>
-          <Footer/>
+          <HeroSection />
+          <AboutMe />
+          <Projects />
+          <Footer />
         </div>
       </div>
-    </>
+    </LanguageProvider>
   );
 }
