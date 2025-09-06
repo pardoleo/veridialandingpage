@@ -1,102 +1,87 @@
 @import "../../colors.scss";
 
-.hero-section-container{
-    height: 100vh; /*Pro Viewport do hero section ser a tela toda no cel e no desk*/
-    display: grid; 
-    place-items: center;
+.hero-section-container {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: url("/testbg.png") no-repeat center center;
+  background-size: cover;
+  position: relative;
 
+  .col-lg-12{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding :25px;
+  }
 
-    position: relative; // Pra permitir posicionamento absoluto interno
-    
-    .language-switcher-wrapper {
-        position: absolute;
-        top: 20px; // Ajusta conforme teu gosto
-        right: 20px; // Ajusta conforme teu gosto
-        z-index: 10; // Fica na frente de outros elementos se precisar
-    }
+  .language-switcher-wrapper {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+  }
 
-
-    width: 100%;
-    background-color: $neutral-color-1;
-    .name-skills{
-        margin-left: 24px;
-        .name{
-            color:$neutral-color-2;
-            font-weight: 800;
-        }
-        .skills{
-            color: $accent-color;
-            font-weight: 600;
-            margin-bottom: 12px;
-            
-        }
-        .desktop-description{
-            text-align: justify;
-            h2{
-                color:$neutral-color-2;
-                font-size: 1.5rem;
-            }
-        }
-    }
-}
-
-.mobileherosection{
+  .desktop-hero-section,
+  .mobileherosection {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    .title{
-        flex: 0 1 auto;
-        margin-top: 6rem;
-        
-        // Animação
-        .skills {
-            animation: typing 0s steps(40, end), blink-caret 0.75s step-end infinite;
-        }
-        
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
-        }
-        
-        @keyframes blink-caret {
-            from, to { border-color: transparent; }
-            50% { border-color: #007bff; }
-        }
-    }
-    .description{
-        flex: 0 1 auto;
-        // margin-top: 6rem;
-    }
-}
-.photo {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .logo {
     img {
-        border-radius: 50%;
-        width: 50%; /* Largura padrão para telas pequenas */
-        margin-bottom: 10px;
+      width: 350px;
+      height: auto;
     }
+  }
 
-    @media (max-width: 768px) {
-        img {
-            width: 40%; /* Largura para telas pequenas */
-        }
-    }
+  .subscribe-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    background: url("/bgui.png") no-repeat center center ;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    max-width: 400px;
+    width: 100%;
 
-    @media (min-width: 769px) {
-        img {
-            width: 35%; /* Largura para telas médias */
-        }
-    }
-
-    @media (min-width: 992px) {
-        img {
-            width: 80%; /* Largura para telas grandes (desktop) */
-        }
-    }
-}
-.mobile-description {
     h2 {
-        font-size: 1.3rem;
+      color: white;
+      margin-bottom: 15px;
+      font-size: 1.4rem;
     }
+
+    input[type="email"] {
+      color:black;
+      width: 100%;
+      padding: 12px;
+      border-radius: 6px;
+      border: none;
+      margin-bottom: 12px;
+      font-size: 1rem;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      background: $accent-color;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        background: darken($accent-color, 10%);
+      }
+    }
+  }
 }
-
-

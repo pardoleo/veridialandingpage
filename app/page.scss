@@ -60,7 +60,9 @@ html {
     }
     // Conteúdo da página à direita
     .content {
-        margin-left: 250px;
+        border-left: 80px;
+        border-right: 80px;
+        background-color: darkgray;
     }
 }
 

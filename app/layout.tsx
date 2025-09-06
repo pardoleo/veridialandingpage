@@ -8,10 +8,10 @@ const inter = Inter({ subsets: ["latin"] });
 // O conteúdo abaixo foi removido para não causar conflitos
 // na importação de metadatas.
 export const metadata: Metadata = {
-  title: "Leonardo Castanha Escribano",
-  description: "Desenvolvedor de Jogos, Desenvolvedor C#",
-  authors:[{ name: "Leonardo Castanha Escribano", url: "https://www.linkedin.com/in/leonardo-castanha-escribano-640b8b17a/" }],
-  keywords:"C#, Unity, Unreal, POO, UI, UX, Engine, .NET, ASP.NET, C++",
+  title: "Veridia MMO",
+  description: "Veridia MMO - A massive multiplayer online game.",
+  authors:[{ name: "Veridia MMO", url: "www.veridiammo.com" }],
+  keywords:"MMO, PvP, Unreal, Team, Guild, UX, Engine, .NET, ASP.NET, C++",
 
 };
 

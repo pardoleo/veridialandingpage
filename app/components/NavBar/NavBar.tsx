@@ -52,7 +52,7 @@ const NavBar = () => {
         </Offcanvas.Body>
       </Offcanvas>
 
-      {/* Desktop */}
+      {/* Desktop
       <div className="left-bar sidebar d-none d-lg-block fixed-sidebar">
         <div className="nav-content-desktop">
           <div className="navbar-img">
@@ -95,7 +95,7 @@ const NavBar = () => {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
