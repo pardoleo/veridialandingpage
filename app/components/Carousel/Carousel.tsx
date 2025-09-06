@@ -2,6 +2,8 @@
 
 import React, { useState } from "react";
 import "./Carousel.scss";
+import { useLanguage } from "@/app/context/LanguageContext";
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 
 const gifs = [
   { src: "/gifs/coleta.gif", title: "Colete recursos", description: "Explore e encontre recursos raros para criação de equipamentos e evolução do personagem! Cada conteúdo sempre trará novos itens valiosos!" },

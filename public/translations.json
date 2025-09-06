@@ -47,6 +47,18 @@
     "professional2": "Always innovating to build more and differentiate products from those that already exist. ",
     "professional3": "In my free time, I enjoy playing games, reading, socializing, listening to music, and studying. "
     },
+    "caroussel":{
+      "combatetitle": "Combat and PvP",
+      "combatedesc": "Fight enemies and bosses in events during the floors, conquer your unique equipment, risk yourself in the obscure zones and recieve incredible rewards!",
+      "comerciotitle": "Market",
+      "comerciodesc":"Sell and trade your items, resources, spells, skins, and even your character, everthing is possible in Veridia Market!",
+      "coletatitle": "Gathering",
+      "coletadesc": "Explore and find rare resources for crafting and evolving your character! Each new content always bring new valuable resources!",
+      "construcaotitle": "Building",
+      "construcaodesc": "Build your base, your legacy, pieces that marks history of servers with your interaction with this universe, fight battles and witness empires rise and fall! Create your own page in the history!",
+      "exploracaotitle": "Exploration",
+      "exploracaodesc": "Discover new territories, new creatures, secrects, magical artifacts, reward chests and much more in every new floor, with the new tematics new challanges awaits!"
+    },
 
     "projectTab" : "All"
   }
