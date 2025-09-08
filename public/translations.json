@@ -6,6 +6,34 @@
       "projects": "Projetos",
       "contact": "Contato"
     },
+    "carousel":{
+      "combate":{
+        "src": "/gifs/combate.gif",
+        "title": "Combate e lutas JxJ",
+        "description": "Enfrente inimigos e chefes em eventos durante os andares, conquiste equipamentos únicos, arrisque-se em zonas obscuras e receba recompensas incríveis!"
+      },
+      "comercio":{
+        "src": "/gifs/comercio.gif",
+        "title": "Comércio",
+        "description": "Venda e troque seus itens, recursos, magias, skins e até mesmo seu personagem, tudo é possível no Mercado de Veridia!"
+
+      },
+      "coleta":{
+        "src": "/gifs/coleta.gif",
+        "title": "Coleta",
+        "description": "Explore e encontre recursos raros para criação e evolução do seu personagem! Cada novo conteúdo sempre traz novos recursos valiosos!"
+      },
+      "construcao":{
+        "src": "/gifs/construcao.gif",
+        "title": "Construção",
+        "description": "Crie sua base, seu legado, peças que marcam a história dos servidores com sua interação com esse universo, lute batalhas e testemunhe impérios surgirem e caírem! Crie sua própria página na história!"
+      },
+      "exploracao":{
+        "src": "/gifs/exploracao.gif",
+        "title": "Exploração",
+        "description": "Descubra novos territórios, novas criaturas, segredos, artefatos mágicos, baús de recompensas e muito mais em cada novo andar, com as novas temáticas novos desafios aguardam!"
+      }
+    },
     "hero": {
       "intro1": "Um desenvolvedor de jogos e aplicativos com alto empenho em aprender mais ",
       "intro2": "Minhas principais habilidades incluem Unity, C#, Game Dev, ASP.NET, UI e Game Design.",
@@ -31,6 +59,35 @@
       "about": "About Me",
       "projects": "Projects",
       "contact": "Contact"
+    },
+     
+    "carousel":{
+      "combate":{
+        "src": "/gifs/combate.gif",
+        "title": "Combat and PvP",
+        "description": "Fight enemies and bosses in events during the floors, conquer your unique equipment, risk yourself in the obscure zones and recieve incredible rewards!"
+      },
+      "comercio":{
+        "src": "/gifs/comercio.gif",
+        "title": "Market",
+        "description": "Sell and trade your items, resources, spells, skins, and even your character, everthing is possible in Veridia Market!"
+      },
+      "coleta":{
+        "src": "/gifs/coleta.gif",
+        "title": "Gathering",
+        "description": "Explore and find rare resources for crafting and evolving your character! Each new content always bring new valuable resources!"
+      },
+      "construcao":{
+        "src": "/gifs/construcao.gif",
+        "title": "Building",
+        "description": "Build your base, your legacy, pieces that marks history of servers with your interaction with this universe, fight battles and witness empires rise and fall! Create your own page in the history!"
+      },
+      "exploracao":{
+        "src": "/gifs/exploracao.gif",
+        "title": "Exploration",
+        "description": "Discover new territories, new creatures, secrects, magical artifacts, reward chests and much more in every new floor, with the new tematics new challanges awaits!"
+      }
+    
     },
     "hero": {
       "intro1": "A game and app developer with a strong commitment to learning more.",
